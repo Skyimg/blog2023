@@ -1,0 +1,172 @@
+--------------------- A Bench Script By spiritlhl ----------------------
+                   测评频道: https://t.me/vps_reviews                    
+版本：2023.10.09
+更新日志：VPS融合怪测试(集百家之长)                       
+---------------------基础信息查询--感谢所有开源项目---------------------
+ CPU 型号          : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz
+ CPU 核心数        : 6
+ CPU 频率          : 3399.992 MHz
+ CPU 缓存          : L1: 192.00 KB / L2: 768.00 KB / L3: 8.00 MB
+ 硬盘空间          : 3.15 GiB / 8.31 GiB
+ 启动盘路径        : /dev/sda2
+ 内存              : 1.92 GiB / 3.83 GiB
+ Swap              : [ no swap partition or swap file detected ]
+ 系统在线时间      : 10 days, 19 hour 41 min
+ 负载              : 0.17, 0.07, 0.06
+ 系统              : Debian GNU/Linux 11 (bullseye) (x86_64)
+ AES-NI指令集      : ✔ Enabled
+ VM-x/AMD-V支持    : ❌ Disabled
+ 架构              : x86_64 (64 Bit)
+ 内核              : 5.10.0-22-amd64
+ TCP加速方式       : bbr
+ 虚拟化架构        : Microsoft Hyper-V
+ NAT类型           : 独立映射,独立过滤,不支持回环
+ IPV4 ASN          : AS16276 OVH SAS
+ IPV4 位置         : Beauharnois / Quebec / CA
+---------------------CPU测试--感谢lemonbench开源------------------------
+ -> CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ 1 线程测试(1核)得分:           954 Scores
+ 6 线程测试(多核)得分:          4947 Scores
+---------------------内存测试--感谢lemonbench开源-----------------------
+ -> 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ 单线程读测试:          20950.85 MB/s
+ 单线程写测试:          16279.17 MB/s
+------------------磁盘dd读写测试--感谢lemonbench开源--------------------
+ -> 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ 测试操作               写速度                                  读速度
+ 100MB-4K Block         36.7 MB/s (8967 IOPS, 2.85s)            40.4 MB/s (9853 IOPS, 2.60s)
+ 1GB-1M Block           3.8 GB/s (3609 IOPS, 0.28s)             5.0 GB/s (4752 IOPS, 0.21s)
+---------------------磁盘fio读写测试--感谢yabs开源----------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 166.45 MB/s  (41.6k) | 379.60 MB/s   (5.9k)
+Write      | 166.89 MB/s  (41.7k) | 381.60 MB/s   (5.9k)
+Total      | 333.35 MB/s  (83.3k) | 761.21 MB/s  (11.8k)           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 449.28 MB/s    (877) | 456.18 MB/s    (445)
+Write      | 473.15 MB/s    (924) | 486.56 MB/s    (475)
+Total      | 922.43 MB/s   (1.8k) | 942.75 MB/s    (920)
+---------------------流媒体解锁--感谢sjlleo开源-------------------------
+以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
+----------------Youtube----------------
+[IPv4]
+连接方式: Google Global CacheCDN (ISP Cooperation)
+ISP运营商: ATMAN
+视频缓存节点地域: 波兰 华沙(WAW3)
+Youtube识别地域: 加拿大(CA)
+----------------Netflix----------------
+[IPv4]
+Netflix在您的出口IP所在的国家不提供服务
+[IPv6]
+您的网络可能没有正常配置IPv6，或者没有IPv6网络接入
+---------------DisneyPlus---------------
+[IPv4]
+当前IPv4出口解锁DisneyPlus
+区域：加拿大区
+解锁Youtube，Netflix，DisneyPlus上面和下面进行比较，不同之处自行判断
+----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
+ 以下为IPV4网络测试，若无IPV4网络则无输出
+============[ Multination ]============
+ Dazn:                                  Yes (Region: CA)
+ HotStar:                               No
+ Disney+:                               No
+ Netflix:                               No
+ YouTube Premium:                       Yes (Region: CA)
+ Amazon Prime Video:                    Yes (Region: CA)
+ TVBAnywhere+:                          Yes
+ iQyi Oversea Region:                   CA
+ Viu.com:                               No
+ YouTube CDN:                           ATMAN in Warsaw 
+ Netflix Preferred CDN:                 Failed
+ Spotify Registration:                  No
+ Steam Currency:                        CAD
+ ChatGPT:                               Yes
+=======================================
+ 以下为IPV6网络测试，若无IPV6网络则无输出
+---------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
+ Tiktok Region:         【CA】
+-------------------欺诈分数以及IP质量检测--本脚本原创-------------------
+数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
+以下为各数据库编号，输出结果后将自带数据库来源对应的编号
+ipinfo数据库 ①  | scamalytics数据库 ②  | virustotal数据库 ③  | abuseipdb数据库 ④  | ip2location数据库   ⑤
+ip-api数据库 ⑥  | ipwhois数据库     ⑦  | ipregistry数据库 ⑧  | ipdata数据库    ⑨  | ipgeolocation数据库 ⑩
+欺诈分数(越低越好): 44②
+abuse得分(越低越好): 0④
+IP类型: 
+  使用类型(usage_type):hosting①  Data Center/Web Hosting/Transit⑤  hosting⑧  hosting
+spam⑨  
+  公司类型(company_type):hosting①  hosting⑧  
+  云服务提供商(cloud_provider):  Yes⑧ 
+  数据中心(datacenter):  Yes② ⑥ ⑨ 
+  移动网络(mobile):  No⑥ 
+  代理(proxy):  No① ② ⑥ ⑦ ⑧ ⑨ 
+  VPN(vpn):  No① ② ⑦ ⑧ 
+  TOR(tor):  No① ② ⑦ ⑧ ⑨ 
+  TOR出口(tor_exit):  No⑧ 
+  搜索引擎机器人(search_engine_robot):  No② 
+  匿名代理(anonymous):  No⑦ ⑧ ⑨ 
+  攻击方(attacker):  No⑧ ⑨ 
+  滥用者(abuser):  No⑧   Yes⑨ 
+  威胁(threat):  No⑧   Yes⑨ 
+  iCloud中继(icloud_relay):  No① ⑧ ⑨ 
+  未分配IP(bogon):  No⑧ ⑨ 
+黑名单记录统计(有多少个黑名单网站有记录): 无害0 恶意0 可疑0 未检测88 ③
+Google搜索可行性：YES
+端口25检测:
+  本地: Yes
+  163邮箱: Yes
+  gmail邮箱: Yes
+  outlook邮箱: Yes
+  qq邮箱：No
+  yandex邮箱: Yes
+----------------三网回程--感谢zhanghanyun/backtrace开源-----------------
+国家: CA 城市: Beauharnois 服务商: AS16276 OVH SAS
+北京电信 219.141.136.12  电信163 [普通线路]           
+北京联通 202.106.50.1    联通4837[普通线路]           
+北京移动 221.179.155.161 移动CMI [普通线路]           
+上海电信 202.96.209.133  电信163 [普通线路]           
+上海联通 210.22.97.1     联通4837[普通线路]           
+上海移动 211.136.112.200 移动CMI [普通线路]           
+广州电信 58.60.188.222   电信163 [普通线路]           
+广州联通 210.21.196.6    联通4837[普通线路]           
+广州移动 120.196.165.24  移动CMI [普通线路]           
+成都电信 61.139.2.69     电信163 [普通线路]           
+成都联通 119.6.6.6       测试超时
+成都移动 211.137.96.205  移动CMI [普通线路]           
+---------------------回程路由--感谢fscarmen开源及PR---------------------
+依次测试电信/联通/移动经过的地区及线路，核心程序来自ipip.net或nexttrace，请知悉!
+广州电信 58.60.188.222
+0.52 ms         * RFC1918
+0.76 ms         AS16276 [OVH-ARIN] 加拿大 魁北克省 博阿努瓦 ovhcloud.com
+0.66 ms         * RFC1918
+0.71 ms         * RFC1918
+1.31 ms         * RFC1918
+104.36 ms       * RFC1918
+1.84 ms         AS1299 [ARELION-NET] 加拿大 魁北克省 蒙特利尔 arelion.com
+9.56 ms         AS1299 [ARELION-NET] 美国 纽约州 纽约 arelion.com
+8.88 ms         AS1299 [ARELION-NET] 美国 纽约州 纽约 arelion.com
+15.80 ms        AS4134 [CHINANET-US] 美国 新泽西州 纽瓦克 CT-POP chinatelecom.com.cn 电信
+74.35 ms        AS4134 [CHINANET-BB] 美国 加利福尼亚州 圣何塞 上海 → 圣何塞 chinatelecom.com.cn 电信
+222.79 ms       AS4134 [CHINANET-BB] 中国 广东省 广州市 chinatelecom.com.cn 电信
+324.21 ms       AS4134 [CHINANET-BB] 中国 广东省 广州市 chinatelecom.com.cn 电信
+231.58 ms       AS4134 [CHINANET-GD] 中国 广东省 深圳市 chinatelecom.com.cn 电信
+226.57 ms       AS4134 中国 广东省 深圳市 福田区 chinatelecom.com.cn 电信
+广州联通 210.21.196.6
+        
+广州移动 120.196.165.24
+        
+--------------------自动更新测速节点列表--本脚本原创--------------------
+位置             上传速度        下载速度        延迟     丢包率
+Speedtest.net    95.92 Mbps      902.83 Mbps     7.52     0.0%
+洛杉矶           96.27 Mbps      793.67 Mbps     72.04    0.0%
+法兰克福         96.50 Mbps      571.92 Mbps     90.27    0.0%
+联通WuXi         78.32 Mbps      666.14 Mbps     228.09   0.0%
+联通郑州5G       88.77 Mbps      505.33 Mbps     248.44   NULL
+电信合肥5G       26.46 Mbps      445.17 Mbps     210.23   0.3%
+电信Nanjing5G    84.16 Mbps      571.34 Mbps     223.65   0.0%
+移动Chengdu      80.57 Mbps      744.42 Mbps     297.87   0.0%
+------------------------------------------------------------------------
+ 总共花费      : 6 分 36 秒
+ 时间          : Mon Oct 16 14:25:18 HKT 2023
+---------------------------------------------------------------------
