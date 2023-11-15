@@ -1,0 +1,200 @@
+--------------------- A Bench Script By spiritlhl ----------------------
+                   测评频道: https://t.me/vps_reviews                    
+版本：2023.11.07
+更新日志：VPS融合怪测试(集百家之长)                       
+---------------------基础信息查询--感谢所有开源项目---------------------
+ CPU 型号          : QEMU Virtual CPU version (cpu64-rhel6)
+ CPU 核心数        : 1
+ CPU 频率          : 1999.998 MHz
+ CPU 缓存          : L1: 64.00 KB / L2: 4.00 MB / L3: 16.00 MB
+ 硬盘空间          : 1.64 GiB / 19.32 GiB
+ 启动盘路径        : /dev/sda2
+ 内存              : 105.05 MiB / 990.90 MiB
+ Swap              : 0 KiB / 521.00 MiB
+ 系统在线时间      : 0 days, 0 hour 4 min
+ 负载              : 0.33, 0.11, 0.03
+ 系统              : Debian GNU/Linux 11 (bullseye) (x86_64)
+ AES-NI指令集      : ✔ Enabled
+ VM-x/AMD-V支持    : ❌ Disabled
+ 架构              : x86_64 (64 Bit)
+ 内核              : 5.10.0-8-amd64
+ TCP加速方式       : bbr
+ 虚拟化架构        : KVM
+ NAT类型           : 开放型
+ IPV4 ASN          : AS3214 xTom GmbH
+ IPV4 位置         : Amsterdam / North Holland / NL
+---------------------CPU测试--感谢lemonbench开源------------------------
+ -> CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ 1 线程测试(1核)得分:           700 Scores
+---------------------内存测试--感谢lemonbench开源-----------------------
+ -> 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ 单线程读测试:          15484.09 MB/s
+ 单线程写测试:          11545.76 MB/s
+------------------磁盘dd读写测试--感谢lemonbench开源--------------------
+ -> 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ 测试操作               写速度                                  读速度
+ 100MB-4K Block         23.4 MB/s (5717 IOPS, 4.48s)            27.7 MB/s (6773 IOPS, 3.78s)
+ 1GB-1M Block           428 MB/s (409 IOPS, 2.45s)              1.7 GB/s (1659 IOPS, 0.60s)
+---------------------磁盘fio读写测试--感谢yabs开源----------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 53.31 MB/s   (13.3k) | 688.72 MB/s  (10.7k)
+Write      | 53.39 MB/s   (13.3k) | 692.34 MB/s  (10.8k)
+Total      | 106.70 MB/s  (26.6k) | 1.38 GB/s    (21.5k)           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 1.47 GB/s     (2.8k) | 1.81 GB/s     (1.7k)
+Write      | 1.55 GB/s     (3.0k) | 1.93 GB/s     (1.8k)
+Total      | 3.03 GB/s     (5.9k) | 3.74 GB/s     (3.6k)
+---------------------流媒体解锁--感谢sjlleo开源-------------------------
+以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
+----------------Youtube----------------
+[IPv4]
+连接方式: Youtube Video Server
+视频缓存节点地域: 荷兰阿姆斯特丹(AMS17S06)
+Youtube识别地域: 无信息(null)
+[IPv6]
+连接方式: Youtube Video Server
+视频缓存节点地域: 荷兰阿姆斯特丹(AMS17S06)
+Youtube识别地域: 无信息(null)
+----------------Netflix----------------
+[IPv4]
+您的出口IP完整解锁Netflix，支持非自制剧的观看
+NF所识别的IP地域信息：荷兰
+[IPv6]
+您的网络可能没有正常配置IPv6，或者没有IPv6网络接入
+---------------DisneyPlus---------------
+[IPv4]
+当前IPv4出口解锁DisneyPlus
+区域：荷兰区
+[IPv6]
+当前IPv6出口解锁DisneyPlus
+区域：荷兰区
+解锁Youtube，Netflix，DisneyPlus上面和下面进行比较，不同之处自行判断
+----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
+ 以下为IPV4网络测试，若无IPV4网络则无输出
+============[ Multination ]============
+ Dazn:                                  Yes (Region: NL)
+ HotStar:                               No
+ Disney+:                               Yes (Region: NL)
+ Netflix:                               Yes (Region: NL)
+ YouTube Premium:                       Failed
+ Amazon Prime Video:                    Yes (Region: NL)
+ TVBAnywhere+:                          Yes
+ iQyi Oversea Region:                   CA
+ Viu.com:                               No
+ YouTube CDN:                           Amsterdam 
+ Netflix Preferred CDN:                 Amsterdam  
+ Spotify Registration:                  No
+ Steam Currency:                        EUR
+ ChatGPT:                               Yes
+=======================================
+ 以下为IPV6网络测试，若无IPV6网络则无输出
+---------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
+ Tiktok Region:         【NL】
+-------------------欺诈分数以及IP质量检测--本脚本原创-------------------
+数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
+以下为各数据库编号，输出结果后将自带数据库来源对应的编号
+ipinfo数据库 ①  | scamalytics数据库 ②  | virustotal数据库 ③  | abuseipdb数据库 ④  | ip2location数据库   ⑤
+ip-api数据库 ⑥  | ipwhois数据库     ⑦  | ipregistry数据库 ⑧  | ipdata数据库    ⑨  | ipgeolocation数据库 ⑩
+欺诈分数(越低越好): 0②
+abuse得分(越低越好): 0④
+IP类型: 
+  使用类型(usage_type):hosting①  Data Center/Web Hosting/Transit⑤  hosting⑧  hosting⑨  
+  公司类型(company_type):hosting①  business⑧  
+  云服务提供商(cloud_provider):  Yes⑧ 
+  数据中心(datacenter):  No②   Yes⑥ ⑨ 
+  移动网络(mobile):  No⑥ 
+  代理(proxy):  No① ②   Yes⑥ ⑦ ⑧ ⑨ ⑩ 
+  VPN(vpn):  No①   Yes② ⑦ ⑧ 
+  TOR(tor):  No① ② ⑦ ⑧ ⑨ 
+  TOR出口(tor_exit):  No⑧ 
+  搜索引擎机器人(search_engine_robot):  No② 
+  匿名代理(anonymous):  Yes⑦ ⑧   No⑨ 
+  攻击方(attacker):  No⑧ ⑨ 
+  滥用者(abuser):  No⑧ ⑨ 
+  威胁(threat):  No⑧ ⑨ 
+  iCloud中继(icloud_relay):  No① ⑧ ⑨ 
+  未分配IP(bogon):  No⑧ ⑨ 
+黑名单记录统计(有多少个黑名单网站有记录): 无害0 恶意0 可疑0 未检测88 ③
+Google搜索可行性：YES
+端口25检测:
+  本地: No
+  163邮箱: Yes
+  gmail邮箱: Yes
+  outlook邮箱: Yes
+  yandex邮箱: Yes
+  qq邮箱: Yes
+----------------三网回程--感谢zhanghanyun/backtrace开源-----------------
+国家: NL 城市: Amsterdam 服务商: AS3214 xTom GmbH
+北京电信 219.141.136.12  电信163 [普通线路]           
+北京联通 202.106.50.1    联通4837[普通线路]           
+北京移动 221.179.155.161 联通4837[普通线路]           
+上海电信 202.96.209.133  联通9929[优质线路]           
+上海联通 210.22.97.1     联通9929[优质线路]           
+上海移动 211.136.112.200 联通9929[优质线路]           
+广州电信 58.60.188.222   联通9929[优质线路]           
+广州联通 210.21.196.6    联通9929[优质线路]           
+广州移动 120.196.165.24  联通9929[优质线路]           
+成都电信 61.139.2.69     电信163 [普通线路]           
+成都联通 119.6.6.6       联通4837[普通线路]           
+成都移动 211.137.96.205  联通4837[普通线路]           
+---------------------回程路由--感谢fscarmen开源及PR---------------------
+依次测试电信/联通/移动经过的地区及线路，核心程序来自ipip.net或nexttrace，请知悉!
+广州电信 58.60.188.222
+9.55 ms         * RFC1918
+1.46 ms         * 荷兰 北荷兰省 阿姆斯特丹
+8.14 ms         * 英国 英格兰 伦敦
+8.69 ms         AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+173.39 ms       AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+153.94 ms       AS10099 [CUG-BACKBONE] 中国 北京市 chinaunicomglobal.com 联通
+186.70 ms       * [CNC-BACKBONE] 中国 北京市 chinaunicom.cn 联通 CUII
+184.74 ms       AS9929 [CNC-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通 CUII
+194.95 ms       * [APNIC-AP] 中国 广东省 广州市
+189.18 ms       AS4134 [CHINANET-BB] 中国 上海市 chinatelecom.com.cn 电信
+        AS4134 中国 广东省 深圳市 福田区 chinatelecom.com.cn 电信
+广州联通 210.21.196.6
+1.67 ms         * RFC1918
+1.10 ms         * 荷兰 北荷兰省 阿姆斯特丹
+9.03 ms         * 英国 英格兰 伦敦
+9.47 ms         AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+170.76 ms       AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+151.36 ms       AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+185.05 ms       * [CNC-BACKBONE] 中国 北京市 chinaunicom.cn 联通 CUII
+192.42 ms       AS9929 [CNC-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通 CUII
+190.70 ms       * [APNIC-AP] 中国 广东省 广州市
+197.07 ms       AS4837 [CU169-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通
+192.15 ms       AS17816 [APNIC-AP] 中国 广东省 深圳市 chinaunicom.cn 联通
+196.99 ms       AS17623 [APNIC-AP] 中国 广东省 深圳市 chinaunicom.cn 联通
+        AS17623 [APNIC-AP] 中国 广东省 深圳市 宝安区 chinaunicom.cn 联通
+广州移动 120.196.165.24
+2.61 ms         * RFC1918
+1.08 ms         * 荷兰 北荷兰省 阿姆斯特丹
+7.72 ms         * 英国 英格兰 伦敦
+7.95 ms         AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+173.18 ms       AS10099 [CUG-BACKBONE] 德国 黑森州 美因河畔法兰克福 chinaunicomglobal.com 联通
+162.43 ms       AS10099 [CUG-BACKBONE] 中国 北京市 chinaunicomglobal.com 联通
+182.99 ms       * [CNC-BACKBONE] 中国 北京市 chinaunicom.cn 联通 CUII
+184.17 ms       AS9929 [CNC-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通 CUII
+187.78 ms       * [APNIC-AP] 中国 广东省 广州市
+* ms    AS4837 [CU169-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通
+205.02 ms       AS9808 [CMNET] 中国 广东省 广州市 chinamobile.com 移动
+223.04 ms       AS9808 [CMNET] 中国 广东省 广州市 chinamobile.com 移动
+222.28 ms       AS9808 [CMNET] 中国 北京市 chinamobile.com 移动
+        AS56040 [APNIC-AP] 中国 广东省 深圳市 chinamobile.com 移动
+--------------------自动更新测速节点列表--本脚本原创--------------------
+位置             上传速度        下载速度        延迟     丢包率
+Speedtest.net    7005.54 Mbps    3397.56 Mbps    1.94     0.0%
+法兰克福         3768.19 Mbps    1447.76 Mbps    21.83    0.0%
+洛杉矶           337.09 Mbps     1301.25 Mbps    155.90   0.0%
+联通WuXi         598.30 Mbps     11.66 Mbps      185.98   0.0%
+联通郑州5G       572.54 Mbps     538.13 Mbps     172.12   NULL
+电信天津5G       399.58 Mbps     74.56 Mbps      168.30   0.0%
+电信江苏5G       8.97 Mbps       1293.63 Mbps    181.34   40.5%
+移动硬核通信     324.62 Mbps     30.08 Mbps      234.61   NULL
+------------------------------------------------------------------------
+ 总共花费      : 6 分 15 秒
+ 时间          : Wed Nov 15 01:20:51 EST 2023
+------------------------------------------------------------------------
+  短链:
+    http://paste.spiritlhl.net/u/QVcBSs.txt
