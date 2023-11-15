@@ -1,0 +1,198 @@
+--------------------- A Bench Script By spiritlhl ----------------------
+                   测评频道: https://t.me/vps_reviews                    
+版本：2023.11.07
+更新日志：VPS融合怪测试(集百家之长)                       
+---------------------基础信息查询--感谢所有开源项目---------------------
+ CPU 型号          : QEMU Virtual CPU version (cpu64-rhel6)
+ CPU 核心数        : 1
+ CPU 频率          : 2599.998 MHz
+ CPU 缓存          : L1: 64.00 KB / L2: 4.00 MB / L3: 16.00 MB
+ 硬盘空间          : 1.65 GiB / 19.32 GiB
+ 启动盘路径        : /dev/sda2
+ 内存              : 91.76 MiB / 990.90 MiB
+ Swap              : 0 KiB / 521.00 MiB
+ 系统在线时间      : 0 days, 0 hour 1 min
+ 负载              : 0.54, 0.20, 0.07
+ 系统              : Debian GNU/Linux 11 (bullseye) (x86_64)
+ AES-NI指令集      : ✔ Enabled
+ VM-x/AMD-V支持    : ❌ Disabled
+ 架构              : x86_64 (64 Bit)
+ 内核              : 5.10.0-8-amd64
+ TCP加速方式       : bbr
+ 虚拟化架构        : KVM
+ NAT类型           : 开放型
+ IPV4 ASN          : AS21887 Fiber Logic Inc.
+ IPV4 位置         : Los Angeles / California / US
+---------------------CPU测试--感谢lemonbench开源------------------------
+ -> CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ 1 线程测试(1核)得分:           401 Scores
+---------------------内存测试--感谢lemonbench开源-----------------------
+ -> 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ 单线程读测试:          8838.15 MB/s
+ 单线程写测试:          5095.02 MB/s
+------------------磁盘dd读写测试--感谢lemonbench开源--------------------
+ -> 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ 测试操作               写速度                                  读速度
+ 100MB-4K Block         1.7 MB/s (416 IOPS, 61.54s)             2.0 MB/s (478 IOPS, 53.55s)
+ 1GB-1M Block           56.2 MB/s (54 IOPS, 18.66s)             149 MB/s (142 IOPS, 7.02s)
+---------------------磁盘fio读写测试--感谢yabs开源----------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 6.27 MB/s     (1.5k) | 74.00 MB/s    (1.1k)
+Write      | 6.27 MB/s     (1.5k) | 74.39 MB/s    (1.1k)
+Total      | 12.55 MB/s    (3.1k) | 148.40 MB/s   (2.3k)           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 148.65 MB/s    (290) | 145.10 MB/s    (141)
+Write      | 156.55 MB/s    (305) | 154.76 MB/s    (151)
+Total      | 305.21 MB/s    (595) | 299.87 MB/s    (292)
+---------------------流媒体解锁--感谢sjlleo开源-------------------------
+以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
+----------------Youtube----------------
+[IPv4]
+连接方式: Youtube Video Server
+视频缓存节点地域: 美国  洛杉机(LAX17S56)
+Youtube识别地域: 无信息(null)
+[IPv6]
+连接方式: Youtube Video Server
+视频缓存节点地域: 美国  洛杉机(LAX17S56)
+Youtube识别地域: 无信息(null)
+----------------Netflix----------------
+[IPv4]
+您的出口IP可以使用Netflix，但仅可看Netflix自制剧
+NF所识别的IP地域信息：美国
+[IPv6]
+您的网络可能没有正常配置IPv6，或者没有IPv6网络接入
+---------------DisneyPlus---------------
+[IPv4]
+当前IPv4出口解锁DisneyPlus
+区域：美国区
+[IPv6]
+当前IPv6出口解锁DisneyPlus
+区域：美国区
+解锁Youtube，Netflix，DisneyPlus上面和下面进行比较，不同之处自行判断
+----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
+ 以下为IPV4网络测试，若无IPV4网络则无输出
+============[ Multination ]============
+ Dazn:                                  Yes (Region: US)
+ HotStar:                               No
+ Disney+:                               No
+ Netflix:                               Originals Only
+ YouTube Premium:                       Yes
+ Amazon Prime Video:                    Yes (Region: US)
+ TVBAnywhere+:                          Yes
+ iQyi Oversea Region:                   US
+ Viu.com:                               No
+ YouTube CDN:                           Los Angeles, CA 
+ Netflix Preferred CDN:                 Los Angeles, CA  
+ Spotify Registration:                  No
+ Steam Currency:                        USD
+ ChatGPT:                               Yes
+=======================================
+ 以下为IPV6网络测试，若无IPV6网络则无输出
+---------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
+ Tiktok Region:         【US】
+-------------------欺诈分数以及IP质量检测--本脚本原创-------------------
+数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
+以下为各数据库编号，输出结果后将自带数据库来源对应的编号
+ipinfo数据库 ①  | scamalytics数据库 ②  | virustotal数据库 ③  | abuseipdb数据库 ④  | ip2location数据库   ⑤
+ip-api数据库 ⑥  | ipwhois数据库     ⑦  | ipregistry数据库 ⑧  | ipdata数据库    ⑨  | ipgeolocation数据库 ⑩
+欺诈分数(越低越好): 0②
+abuse得分(越低越好): 0④
+IP类型: 
+  使用类型(usage_type):hosting①  Data Center/Web Hosting/Transit⑤  hosting⑧  business⑨  
+  公司类型(company_type):hosting①  business⑧  
+  云服务提供商(cloud_provider):  Yes⑧ 
+  数据中心(datacenter):  No②   Yes⑥ ⑨ 
+  移动网络(mobile):  No⑥ 
+  代理(proxy):  No① ②   Yes⑥ ⑦ ⑧ ⑨ ⑩ 
+  VPN(vpn):  No①   Yes② ⑦ ⑧ 
+  TOR(tor):  No① ② ⑦ ⑧ ⑨ 
+  TOR出口(tor_exit):  No⑧ 
+  搜索引擎机器人(search_engine_robot):  No② 
+  匿名代理(anonymous):  Yes⑦ ⑧   No⑨ 
+  攻击方(attacker):  No⑧ ⑨ 
+  滥用者(abuser):  No⑧ ⑨ 
+  威胁(threat):  No⑧ ⑨ 
+  iCloud中继(icloud_relay):  No① ⑧ ⑨ 
+  未分配IP(bogon):  No⑧ ⑨ 
+黑名单记录统计(有多少个黑名单网站有记录): 无害0 恶意0 可疑0 未检测88 ③
+Google搜索可行性：YES
+端口25检测:
+  本地: No
+  163邮箱: Yes
+  gmail邮箱: Yes
+  outlook邮箱: Yes
+  yandex邮箱: Yes
+  qq邮箱: Yes
+----------------三网回程--感谢zhanghanyun/backtrace开源-----------------
+国家: US 城市: Los Angeles 服务商: AS21887 Fiber Logic Inc.
+北京电信 219.141.136.12  电信CN2 [优质线路]           
+北京联通 202.106.50.1    联通4837[普通线路]           
+北京移动 221.179.155.161 电信CN2 [优质线路]           
+上海电信 202.96.209.133  电信163 [普通线路]           
+上海联通 210.22.97.1     联通4837[普通线路]           
+上海移动 211.136.112.200 移动CMI [普通线路]           
+广州电信 58.60.188.222   电信163 [普通线路]           
+广州联通 210.21.196.6    联通4837[普通线路]           
+广州移动 120.196.165.24  移动CMI [普通线路]           
+成都电信 61.139.2.69     电信CN2 [优质线路]           
+成都联通 119.6.6.6       联通4837[普通线路]           
+成都移动 211.137.96.205  电信CN2 [优质线路]           
+---------------------回程路由--感谢fscarmen开源及PR---------------------
+依次测试电信/联通/移动经过的地区及线路，核心程序来自ipip.net或nexttrace，请知悉!
+广州电信 58.60.188.222
+14.28 ms        * RFC1918
+5.34 ms         AS8100 [QUADRANET] 美国 加利福尼亚州 洛杉矶 quadranet.com
+1.22 ms         AS8100 美国 加利福尼亚州 洛杉矶 quadranet.com
+356.37 ms       AS4134 [CHINANET-US] 美国 加利福尼亚州 洛杉矶 chinatelecom.com.cn 电信
+146.63 ms       AS4134 [CHINANET-BB] 中国 北京市 chinatelecom.com.cn 电信
+260.90 ms       AS4134 [CHINANET-BB] 中国 广东省 广州市 chinatelecom.com.cn 电信
+354.60 ms       AS134774 [CHINANET-GD] 中国 广东省 深圳市 chinatelecom.cn 电信
+160.38 ms       AS4134 中国 广东省 深圳市 福田区 chinatelecom.com.cn 电信
+广州联通 210.21.196.6
+22.51 ms        * RFC1918
+6.56 ms         * RFC1918
+16.14 ms        * RFC1918
+17.42 ms        AS4837 [CU169-BACKBONE] 中国 北京市 chinaunicom.cn 联通
+158.57 ms       AS4837 [CU169-BACKBONE] 中国 北京市 chinaunicom.cn 联通
+193.02 ms       AS4837 [CU169-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通
+210.79 ms       AS4837 [CU169-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通
+283.83 ms       AS4837 [CU169-BACKBONE] 中国 广东省 广州市 chinaunicom.cn 联通
+214.81 ms       AS17816 [APNIC-AP] 中国 广东省 深圳市 chinaunicom.cn 联通
+190.35 ms       AS17623 [APNIC-AP] 中国 广东省 深圳市 chinaunicom.cn 联通
+189.97 ms       AS17623 [APNIC-AP] 中国 广东省 深圳市 宝安区 chinaunicom.cn 联通
+广州移动 120.196.165.24
+13.67 ms        * RFC1918
+1.04 ms         AS8100 [QUADRANET] 美国 加利福尼亚州 洛杉矶 quadranet.com
+3.67 ms         AS8100 美国 加利福尼亚州 洛杉矶 quadranet.com
+2.46 ms         AS8100 美国 加利福尼亚州 洛杉矶 quadranet.com
+9.73 ms         AS3491 [PCCW-BACKBONE] 美国 加利福尼亚州 洛杉矶 pccwglobal.com
+23.75 ms        AS3491 [PCCW-BACKBONE] 美国 加利福尼亚州 洛杉矶 pccwglobal.com
+9.43 ms         AS3491 [PCCW-BACKBONE] 美国 加利福尼亚州 洛杉矶 pccwglobal.com
+1.43 ms         AS174 [COGENT-BONE] 美国 加利福尼亚州 洛杉矶 cogentco.com
+1.36 ms         AS174 [COGENT-BONE] 美国 加利福尼亚州 洛杉矶 cogentco.com
+11.79 ms        AS174 美国 加利福尼亚州 洛杉矶 cogentco.com
+6.01 ms         AS58453 [CMI-INT] 美国 加利福尼亚州 洛杉矶 cmi.chinamobile.com 移动
+7.52 ms         AS58453 [CMI-INT] 美国 加利福尼亚州 洛杉矶 cmi.chinamobile.com 移动
+154.79 ms       AS58453 [CMI-INT] 中国 广东省 广州市 cmi.chinamobile.com 移动
+168.64 ms       AS9808 [CMNET] 中国 广东省 广州市 chinamobile.com 移动
+191.30 ms       AS9808 [CMNET] 中国 广东省 广州市 chinamobile.com 移动
+165.53 ms       AS9808 [CMNET] 中国 广东省 广州市 chinamobile.com 移动
+163.94 ms       AS9808 [CMNET] 中国 北京市 chinamobile.com 移动
+165.57 ms       AS56040 [APNIC-AP] 中国 广东省 深圳市 chinamobile.com 移动
+--------------------自动更新测速节点列表--本脚本原创--------------------
+位置             上传速度        下载速度        延迟     丢包率
+Speedtest.net    987.61 Mbps     860.01 Mbps     0.61     0.0%
+洛杉矶           482.79 Mbps     558.16 Mbps     20.92    0.0%
+法兰克福         449.22 Mbps     256.21 Mbps     156.31   0.0%
+联通上海5G       54.99 Mbps      245.23 Mbps     192.32   0.0%
+联通WuXi         9.21 Mbps       9.32 Mbps       222.16   0.0%
+电信Suzhou5G     745.79 Mbps     323.71 Mbps     139.72   NULL
+电信重庆         26.40 Mbps      1.90 Mbps       181.32   0.0%
+------------------------------------------------------------------------
+ 总共花费      : 9 分 43 秒
+ 时间          : Wed Nov 15 02:18:59 EST 2023
+------------------------------------------------------------------------
+  短链:
+    http://paste.spiritlhl.net/u/nm3zmn.txt
