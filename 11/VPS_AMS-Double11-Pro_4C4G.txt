@@ -319,3 +319,50 @@ Upload succeeded. Visit the following link and view your results online:
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
+
+----------------------------------------------------------------------
+ Superbench.sh -- https://www.oldking.net/350.html
+ Mode  : Standard    Version : 1.1.7
+ Usage : wget -qO- sb.oldking.net | bash
+----------------------------------------------------------------------
+ CPU Model            : Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
+ CPU Cores            : 4 Cores 2494.134 MHz x86_64
+ CPU Cache            : 16384 KB
+ OS                   : Debian GNU/Linux 11 (64 Bit) KVM
+ Kernel               : 5.10.0-26-cloud-amd64
+ Total Space          : 1.3 GB / 40.0 GB
+ Total RAM            : 94 MB / 3933 MB (567 MB Buff)
+ Total SWAP           : 0 MB / 255 MB
+ Uptime               : 0 days 0 hour 22 min
+ Load Average         : 0.39, 0.53, 0.27
+ TCP CC               : bbr
+ ASN & ISP            : AS3214, xTom GmbH
+ Organization         : Hizakura B.V
+ Location             : Amsterdam, Netherlands / NL
+ Region               : North Holland
+----------------------------------------------------------------------
+ I/O Speed( 1.0GB )   : 662 MB/s
+ I/O Speed( 1.0GB )   : 851 MB/s
+ I/O Speed( 1.0GB )   : 638 MB/s
+ Average I/O Speed    : 717.0 MB/s
+----------------------------------------------------------------------
+ Node Name        Upload Speed      Download Speed      Latency
+ Speedtest.net    1043.72 Mbit/s    985.70 Mbit/s       0.75 ms
+ Fast.com         0.00 Mbit/s       203.4 Mbit/s        -
+ Nanjing 5G   CT  479.74 Mbit/s     982.47 Mbit/s       188.96 ms
+ Hefei 5G     CT  488.08 Mbit/s     938.32 Mbit/s       187.77 ms
+ Shanghai 5G  CU  612.10 Mbit/s     994.23 Mbit/s       190.43 ms
+----------------------------------------------------------------------
+ Finished in  : 2 min 14 sec
+ Timestamp    : 2023-11-17 22:09:09 GMT+8
+ Results      : ./superbench.log
+----------------------------------------------------------------------
+ Share result:
+ · https://www.speedtest.net/result/c/79336031-678f-4b22-9bd6-18d6794cad00
+ · https://paste.ubuntu.com/p/mKGJtPsZvS/
+----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
