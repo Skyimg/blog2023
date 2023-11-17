@@ -600,3 +600,99 @@ YABS completed in 15 min 26 sec
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
+
+——————————————————————————————— ecsspeed-net —————————————————————————————————
+             bash <(wget -qO- bash.spiritlhl.net/ecs-net)
+             Repo：https://github.com/spiritLHLS/ecsspeed
+             节点更新: 2023/11/16  | 脚本更新: 2023/05/05
+——————————————————————————————————————————————————————————————————————————————
+脚本当天运行次数:31，累计运行次数:4832
+测速类型:
+        1.三网测速(就近节点)    3.联通          6.香港          8.退出测速
+        2.三网测速(所有节点)    4.电信          7.台湾
+                                5.移动
+——————————————————————————————————————————————————————————————————————————————
+
+请输入数字选择测速类型: 2
+checking speedtest server ID
+——————————————————————————————————————————————————————————————————————————————
+位置             上传速度        下载速度        延迟     丢包率
+联通湖南5G       491.59 Mbps     548.71 Mbps     181.11   NULL
+联通上海5G       600.78 Mbps     989.58 Mbps     171.93   0.0%
+联通成都         481.23 Mbps     1001.81 Mbps    191.18   NULL
+联通沈阳         277.10 Mbps     535.17 Mbps     172.05   3.3%
+联通北京         688.64 Mbps     910.42 Mbps     128.28   NULL
+联通WuXi         786.45 Mbps     807.44 Mbps     186.17   0.0%
+联通海南         442.83 Mbps     998.41 Mbps     199.75   NULL
+联通Fuzhou       450.99 Mbps     1000.54 Mbps    196.57   0.0%
+联通郑州5G       663.09 Mbps     921.12 Mbps     174.99   NULL
+电信Lanzhou      2.54 Mbps       252.25 Mbps     258.63   NULL
+电信Suzhou5G     653.03 Mbps     926.45 Mbps     180.47   NULL
+电信重庆         0.44 Mbps       0.15 Mbps       291.60   7.2%
+电信合肥5G       498.10 Mbps     978.28 Mbps     183.66   0.0%
+电信Nanjing5G    473.60 Mbps     848.41 Mbps     181.97   0.0%
+电信成都         435.81 Mbps     782.08 Mbps     198.56   0.0%
+电信天津5G       479.45 Mbps     888.91 Mbps     184.34   0.0%
+电信浙江         496.94 Mbps     1011.49 Mbps    182.46   NULL
+电信浙江         484.98 Mbps     984.91 Mbps     182.26   NULL
+电信江苏5G       3.53 Mbps       899.45 Mbps     174.17   0.3%
+移动硬核通信     376.69 Mbps     613.28 Mbps     207.32   NULL
+——————————————————————————————————————————————————————————————————————————————
+ 总共花费      : 11 分 4 秒
+ 时间          : Fri Nov 17 15:37:13 UTC 2023
+——————————————————————————————————————————————————————————————————————————————
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+ 2  a1.cr01.ams01.xtom.nl (91.200.241.196)  0.33 ms  *  Netherlands, North Holland, Amsterdam, xtom.com
+    a1.cr01.ams01.xtom.nl (91.200.241.196)  0.39 ms  *  Netherlands, North Holland, Amsterdam, xtom.com
+    a1.cr01.ams01.xtom.nl (91.200.241.196)  31.21 ms  *  Netherlands, North Holland, Amsterdam, xtom.com
+ 3  a1.waves.cr01.fra01.xtom.de (91.200.241.188)  7.89 ms  *  Germany, Hesse, Frankfurt, xtom.com
+    a1.waves.cr01.fra01.xtom.de (91.200.241.188)  8.64 ms  *  Germany, Hesse, Frankfurt, xtom.com
+    a1.waves.cr01.fra01.xtom.de (91.200.241.188)  7.89 ms  *  Germany, Hesse, Frankfurt, xtom.com
+ 4  145.14.73.5  8.23 ms  AS4809  Germany, Hesse, Frankfurt, cteurope.net
+    145.14.73.5  8.23 ms  AS4809  Germany, Hesse, Frankfurt, cteurope.net
+    145.14.73.5  8.18 ms  AS4809  Germany, Hesse, Frankfurt, cteurope.net
+ 5  5.154.154.81  8.03 ms  *  Germany, Hesse, Frankfurt, ctclouds.com
+    5.154.154.81  7.95 ms  *  Germany, Hesse, Frankfurt, ctclouds.com
+    5.154.154.81  8.02 ms  *  Germany, Hesse, Frankfurt, ctclouds.com
+ 6  5.154.156.42  153.47 ms  *  Germany, Hesse, Frankfurt, ctclouds.com
+    5.154.156.42  153.46 ms  *  Germany, Hesse, Frankfurt, ctclouds.com
+    5.154.156.42  153.49 ms  *  Germany, Hesse, Frankfurt, ctclouds.com
+ 7  59.43.182.41  146.06 ms  *  China, Beijing, ChinaTelecom
+    59.43.182.41  146.07 ms  *  China, Beijing, ChinaTelecom
+    59.43.182.41  145.77 ms  *  China, Beijing, ChinaTelecom
+ 8  59.43.19.93  176.41 ms  *  China, Beijing, ChinaTelecom
+    59.43.19.93  176.38 ms  *  China, Beijing, ChinaTelecom
+    59.43.19.93  177.04 ms  *  China, Beijing, ChinaTelecom
+——————————————————————————————————————————————————————————————————————————————
+2  a1.cr01.ams01.xtom.nl (91.200.241.196)  0.40 ms  *  Netherlands, North Holland, Amsterdam, xtom.com
+    a1.cr01.ams01.xtom.nl (91.200.241.196)  0.53 ms  *  Netherlands, North Holland, Amsterdam, xtom.com
+    a1.cr01.ams01.xtom.nl (91.200.241.196)  0.39 ms  *  Netherlands, North Holland, Amsterdam, xtom.com
+ 3  a5.waves.cr01.lon08.xtom.uk (91.200.241.73)  7.15 ms  *  United Kingdom, London, xtom.com
+    a5.waves.cr01.lon08.xtom.uk (91.200.241.73)  6.99 ms  *  United Kingdom, London, xtom.com
+    a5.waves.cr01.lon08.xtom.uk (91.200.241.73)  7.08 ms  *  United Kingdom, London, xtom.com
+ 4  162.255.48.9  8.92 ms  AS10099  United Kingdom, London, ChinaUnicom
+    162.255.48.9  8.64 ms  AS10099  United Kingdom, London, ChinaUnicom
+    162.255.48.9  11.49 ms  AS10099  United Kingdom, London, ChinaUnicom
+ 5  162.255.48.230  19.88 ms  AS10099  United Kingdom, London, ChinaUnicom
+    162.255.48.202  21.16 ms  AS10099  United Kingdom, London, ChinaUnicom
+    162.255.48.230  21.10 ms  AS10099  United Kingdom, London, ChinaUnicom
+ 6  162.255.48.229  172.31 ms  AS10099  United Kingdom, London, ChinaUnicom
+    162.255.48.229  172.26 ms  AS10099  United Kingdom, London, ChinaUnicom
+    162.255.48.229  172.19 ms  AS10099  United Kingdom, London, ChinaUnicom
+ 7  210.78.28.157  160.65 ms  *  China, Beijing, ChinaUnicom
+    210.78.28.157  160.66 ms  *  China, Beijing, ChinaUnicom
+    210.78.28.157  160.67 ms  *  China, Beijing, ChinaUnicom
+ 8  210.78.30.146  160.75 ms  *  China, Beijing, ChinaUnicom
+    210.78.30.146  160.92 ms  *  China, Beijing, ChinaUnicom
+    210.78.30.146  160.95 ms  *  China, Beijing, ChinaUnicom
+ 9  219.158.32.189  164.04 ms  AS4837  China, Beijing, ChinaUnicom
+    219.158.32.189  169.14 ms  AS4837  China, Beijing, ChinaUnicom
+    219.158.32.189  166.31 ms  AS4837  China, Beijing, ChinaUnicom
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
