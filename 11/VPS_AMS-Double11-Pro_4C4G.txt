@@ -224,8 +224,6 @@ Speedtest.net    1038.56 Mbps    993.51 Mbps     0.78     0.0%
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
-
-root@s26585 ~/Geekbench-5.5.1-Linux # sudo ./geekbench5
 Geekbench 5.5.1 Tryout : https://www.geekbench.com/
 
 Geekbench 5 requires an active Internet connection when in tryout mode and
@@ -432,7 +430,7 @@ Upload succeeded. Visit the following link and view your results online:
 ========================================================================
    BYTE UNIX Benchmarks (Version 5.1.3)
 
-   System: s26585: GNU/Linux
+   System: : GNU/Linux
    OS: GNU/Linux -- 5.10.0-26-cloud-amd64 -- #1 SMP Debian 5.10.197-1 (2023-09-29)
    Machine: x86_64 (unknown)
    Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
@@ -520,3 +518,85 @@ System Benchmarks Index Score                                        3089.4
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2023-09-06                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Fri 17 Nov 2023 03:09:25 PM UTC
+
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 1 hours, 25 minutes
+Processor  : Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
+CPU cores  : 4 @ 2494.134 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 3.8 GiB
+Swap       : 256.0 MiB
+Disk       : 39.3 GiB
+Distro     : Debian GNU/Linux 11 (bullseye)
+Kernel     : 5.10.0-26-cloud-amd64
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ✔ Online
+
+IPv4 Network Information:
+---------------------------------
+ISP        : xTom GmbH
+ASN        : AS3214 xTom GmbH
+Host       : Hizakura B.V
+Location   : Amsterdam, North Holland (NH)
+Country    : Netherlands
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 207.83 MB/s  (51.9k) | 1.29 GB/s    (20.2k)
+Write      | 208.38 MB/s  (52.0k) | 1.30 GB/s    (20.3k)
+Total      | 416.22 MB/s (104.0k) | 2.60 GB/s    (40.6k)
+           |                      |
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 1.24 GB/s     (2.4k) | 1.22 GB/s     (1.1k)
+Write      | 1.31 GB/s     (2.5k) | 1.30 GB/s     (1.2k)
+Total      | 2.55 GB/s     (4.9k) | 2.52 GB/s     (2.4k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping
+-----           | -----                     | ----            | ----            | ----
+Clouvider       | London, UK (10G)          | 1.04 Gbits/sec  | 968 Mbits/sec   | 8.39 ms
+Scaleway        | Paris, FR (10G)           | 1.04 Gbits/sec  | 968 Mbits/sec   | 9.19 ms
+NovoServe       | North Holland, NL (40G)   | 1.04 Gbits/sec  | 986 Mbits/sec   | 5.56 ms
+Uztelecom       | Tashkent, UZ (10G)        | 943 Mbits/sec   | 567 Mbits/sec   | 99.4 ms
+Clouvider       | NYC, NY, US (10G)         | 828 Mbits/sec   | 491 Mbits/sec   | 83.7 ms
+Clouvider       | Dallas, TX, US (10G)      | busy            | 4.49 Mbits/sec  | 234 ms
+Clouvider       | Los Angeles, CA, US (10G) | 586 Mbits/sec   | 119 Mbits/sec   | 146 ms
+
+iperf3 Network Speed Tests (IPv6):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping
+-----           | -----                     | ----            | ----            | ----
+Clouvider       | London, UK (10G)          | 1.04 Gbits/sec  | 957 Mbits/sec   | 8.38 ms
+Scaleway        | Paris, FR (10G)           | busy            | busy            | 9.71 ms
+NovoServe       | North Holland, NL (40G)   | 1.04 Gbits/sec  | 976 Mbits/sec   | 5.51 ms
+Uztelecom       | Tashkent, UZ (10G)        | 927 Mbits/sec   | 151 Mbits/sec   | 99.3 ms
+Clouvider       | NYC, NY, US (10G)         | 886 Mbits/sec   | 444 Mbits/sec   | 83.8 ms
+Clouvider       | Dallas, TX, US (10G)      | 635 Mbits/sec   | 22.9 Mbits/sec  | 234 ms
+Clouvider       | Los Angeles, CA, US (10G) | 584 Mbits/sec   | 123 Mbits/sec   | 146 ms
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value
+                |
+Single Core     | 915
+Multi Core      | 3029
+Full Test       | https://browser.geekbench.com/v6/cpu/3589601
+
+YABS completed in 15 min 26 sec
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
