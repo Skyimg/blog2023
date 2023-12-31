@@ -1,0 +1,133 @@
+# 原始数据
+root@localhost:~# ./speedtest -s 18136 
+
+   Speedtest by Ookla
+
+     Server: TANGO - Bertrange (id = 18136)
+        ISP: FranTech Solutions
+    Latency:     0.85 ms   (0.07 ms jitter)
+   Download:  5454.20 Mbps (data used: 3.2 GB)                               
+     Upload:  7318.16 Mbps (data used: 11.9 GB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/33bdbe1b-245c-4030-9b10-9efe6b765fb3
+
+root@localhost:~# ./speedtest -s 3744
+
+   Speedtest by Ookla
+
+     Server: Nessus GmbH (10G Uplink) - Vienna (id = 3744)
+        ISP: FranTech Solutions
+    Latency:    16.15 ms   (0.14 ms jitter)
+   Download:  3231.58 Mbps (data used: 4.5 GB)                               
+     Upload:  1768.71 Mbps (data used: 2.8 GB)                               
+Packet Loss: Not available.
+ Result URL: https://www.speedtest.net/result/c/24e6899c-d783-4167-a739-ee7b3d03d488
+
+root@localhost:~# ./speedtest -s 9567
+
+   Speedtest by Ookla
+
+     Server: STARNET, s.r.o. - Ceske Budejovice (id = 9567)
+        ISP: FranTech Solutions
+    Latency:    11.96 ms   (0.58 ms jitter)
+   Download:  4649.44 Mbps (data used: 6.5 GB)                               
+     Upload:  5628.28 Mbps (data used: 8.9 GB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/9525b871-e875-40be-b50b-1a9cb0bc1dbc
+
+root@localhost:~# ./speedtest -s 8099 
+
+   Speedtest by Ookla
+
+     Server: GoHost Server - Nuremberg (id = 8099)
+        ISP: FranTech Solutions
+    Latency:     7.50 ms   (0.09 ms jitter)
+   Download:  3322.89 Mbps (data used: 3.3 GB)                               
+     Upload:  6826.29 Mbps (data used: 6.8 GB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/e78200b2-909f-4380-829d-c46ce6e47faa
+
+root@localhost:~# ./speedtest -s 6634
+
+   Speedtest by Ookla
+
+     Server: MAN Bydgoszcz 10GE - Bydgoszcz (id = 6634)
+        ISP: FranTech Solutions
+    Latency:    30.18 ms   (0.04 ms jitter)
+   Download:  2797.42 Mbps (data used: 3.8 GB)                               
+     Upload:  2216.09 Mbps (data used: 3.7 GB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/33cfe332-ca0f-498b-a9df-367084c760ec
+
+root@localhost:~# ./speedtest -s 15853
+
+   Speedtest by Ookla
+
+     Server: Uniti Fiber - Atlanta, GA (id = 15853)
+        ISP: FranTech Solutions
+    Latency:   103.40 ms   (29.45 ms jitter)
+   Download:  2765.15 Mbps (data used: 3.9 GB)                               
+     Upload:   739.55 Mbps (data used: 903.9 MB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/edc772ca-351f-4829-b519-fd7e8f4a6556
+
+root@localhost:~# ./speedtest -s 16495
+
+   Speedtest by Ookla
+
+     Server: Uniti Fiber - Birmingham, AL (id = 16495)
+        ISP: FranTech Solutions
+    Latency:   103.08 ms   (1.29 ms jitter)
+   Download:  1279.67 Mbps (data used: 2.1 GB)                               
+     Upload:   793.74 Mbps (data used: 1.3 GB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/b419229f-b392-446b-857d-12e15758ef8b
+
+root@localhost:~# ./speedtest -s 16352
+
+   Speedtest by Ookla
+
+     Server: Uniti Fiber - Hammond, LA (id = 16352)
+        ISP: FranTech Solutions
+    Latency:   111.44 ms   (0.59 ms jitter)
+   Download:  2603.01 Mbps (data used: 3.0 GB)                               
+     Upload:   689.90 Mbps (data used: 942.2 MB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/24e51c73-d5ff-402a-9e3f-7ad72b4bbf34
+
+root@localhost:~# ./speedtest -s 15811
+
+   Speedtest by Ookla
+
+     Server: Uniti Fiber - Jacksonville, FL (id = 15811)
+        ISP: FranTech Solutions
+    Latency:   109.41 ms   (0.24 ms jitter)
+   Download:  2292.79 Mbps (data used: 3.2 GB)                               
+     Upload:   170.71 Mbps (data used: 290.2 MB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/9d0da170-5475-4450-88bb-366690e57768
+
+root@localhost:~# ./speedtest -s 21570
+
+   Speedtest by Ookla
+
+     Server: i3D.net - Johannesburg (id = 21570)
+        ISP: FranTech Solutions
+    Latency:   170.32 ms   (0.55 ms jitter)
+   Download:  1534.60 Mbps (data used: 2.2 GB)                               
+     Upload:   495.46 Mbps (data used: 690.9 MB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/4713c059-9447-4c17-a12e-53658f417fa1
+
+root@localhost:~# ./speedtest -s 44340
+
+   Speedtest by Ookla
+
+     Server: Telstra International - Hong Kong (id = 44340)
+        ISP: FranTech Solutions
+    Latency:   188.04 ms   (0.15 ms jitter)
+   Download:  1334.99 Mbps (data used: 1.5 GB)                               
+     Upload:  1164.04 Mbps (data used: 1.9 GB)                               
+Packet Loss:     0.0%
+ Result URL: https://www.speedtest.net/result/c/d369cfab-e12e-454b-960c-91c9d39e011b
+
